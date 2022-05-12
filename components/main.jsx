@@ -1,3 +1,4 @@
+import ProductTile from './catalog/product-tile';
 import HomeNewsletter from './homepage/home-newsletter';
 
 export default function Main() {
@@ -54,7 +55,9 @@ export default function Main() {
             </p>
           </header>
 
-          <section className="product-tiles">{/* product-tile */}</section>
+          <section className="product-tiles">
+            <ProductTile></ProductTile>
+          </section>
 
           <footer>
             <a href="" title="See more" className="catalog-preview-cta">
