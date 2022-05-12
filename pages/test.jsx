@@ -9,12 +9,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       Hello
-      <i class="fa-solid fa-phone"></i>
+      <i className="fa-solid fa-phone"></i>
       <button className="button">test</button>
       <button className="button button-large">test LARGE</button>
       <a className="button">test</a>
       <a className="button button-large">test LARGE</a>
-
       <div>
         <div className="mt-4">
           <span className="badge">-50%</span>
