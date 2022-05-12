@@ -22,12 +22,14 @@ export default function Header() {
           <ul>
             <li>
               <a href="" title="Menu">
-                <i class="fa-solid fa-bars"></i></a>
+                <i className="fa-solid fa-bars"></i>
+              </a>
             </li>
 
             <li>
               <a href="" title="search">
-                <i class="fa-solid fa-magnifying-glass"></i></a>
+                <i className="fa-solid fa-magnifying-glass"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -50,7 +52,7 @@ export default function Header() {
 
         <div className="header-logo text-center">
           <a href="https:/nbc.com">
-          <img src="/images/logo.jpg" alt="Thread affair Logo" />
+            <img src="/images/logo.jpg" alt="Thread affair Logo" />
           </a>
         </div>
       </section>
