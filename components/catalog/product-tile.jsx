@@ -1,14 +1,19 @@
-export default function ProductTile() {
+// props
+// props.product
+
+export default function ProductTile({ product }) {
+  if (!product) {
+    return;
+  }
+
+  const { productPrice, productName, productImage } = product;
+
   return (
     <article className="product-tile">
       <header className="product-tile-header">
         <div className="product-tile-image">
-          <a href="" title="Thread Affair Gingham Suit">
-            <img
-              src="/images/products/product-01a.jpg"
-              title="Thread Affair Gingham Suit"
-              alt=""
-            />
+          <a href="" title={productName}>
+            <img src={productImage} title={productName} alt={productName} />
           </a>
         </div>
 
@@ -18,13 +23,13 @@ export default function ProductTile() {
 
         <div className="product-tile-headings">
           <h1>
-            <a href="" title="Thread Affair Gingham Suit">
+            <a href="" title={productName}>
               <span>Thread Affair</span> <span>Gingham</span> Suit
             </a>
           </h1>
 
           <h2>
-            <a href="" title="Thread Affair Gingham Suit">
+            <a href="" title={productName}>
               Berlin fit-regular
             </a>
           </h2>
@@ -36,7 +41,7 @@ export default function ProductTile() {
           <span className="product-price-regular">399</span>
 
           <span className="product-price">
-            USD <span>299</span>
+            USD <span>{productPrice}</span>
           </span>
         </div>
       </section>
